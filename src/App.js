@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav';
+import Banner from './components/body/Banner';
+import MovieCat from './components/body/MovieCat';
+import Footer from './components/body/Footer';
+import { popular, action, horror, comedy } from '../src/constants/constants';
+import helloWorld from './components/body/helloWorld';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />
+      <Banner />
+      <MovieCat title='popular' url={popular} />
+      <MovieCat title='action' isSmall url={action} />
+      <MovieCat title='horror' isSmall url={horror} />
+      <MovieCat title='top-rated' url={popular} />
+      <MovieCat title='comedy' isSmall url={comedy} />
+
+      <Footer />
+
+    </>
   );
 }
 

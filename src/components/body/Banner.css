@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.movie-details {
+    text-align: left;
+    margin-top: 4rem;
+}
+
+.banner-container {
+    position: relative;
+    height: auto;
+    /* Adjusted for responsive height */
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Replace with Netflix font if available */
+}
+
+.banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Adjusted for responsive height */
+
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.banner-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-info {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.banner-description {
+    inline-size: 28em;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.play-button {
+    font-size: 0.9em;
+    width: 6rem;
+    height: 2rem;
+    background-color: rgb(55, 55, 55);
+    color: aliceblue;
+    border-radius: 4px;
+    border: none;
+}
+
+.play-button:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .banner-title {
+        font-size: 3em;
+    }
+
+    .banner-info {
+        font-size: 1.3em;
+    }
+
+    .banner-description {
+        inline-size: 24em;
+    }
+
+    .play-button {
+        font-size: 0.9em;
+        width: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        padding: 30px;
+    }
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    .banner-info {
+        font-size: 1.2em;
+    }
+
+    .banner-description {
+        inline-size: 20em;
+    }
+
+    .play-button {
+        font-size: 0.85em;
+        width: 5.5rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container {
+        padding: 20px;
+    }
+
+    .banner-title {
+        font-size: 2em;
+    }
+
+    .banner-info {
+        font-size: 1em;
+    }
+
+    .banner-description {
+        inline-size: auto;
+        /* Use full width */
+        font-size: 0.9em;
+    }
+
+    .play-button {
+        font-size: 0.75em;
+        width: auto;
+        /* Use auto width */
+        padding: 6px 10px;
+
+    }
+}

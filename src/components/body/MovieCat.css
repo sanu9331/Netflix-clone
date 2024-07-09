@@ -1,0 +1,62 @@
+.cat-name {
+    height: auto;
+    /* Change this to auto to adjust based on content */
+    color: white;
+    text-align: center;
+    padding: 2rem 3rem;
+    /* Adjust padding if necessary */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Replace with Netflix font if available */
+}
+
+.cat-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: left;
+    /* margin-bottom: 1rem; */
+    /* Ensure consistent margin */
+}
+
+.row {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.posters {
+    display: flex;
+    /* padding: 0rem 0; */
+    /* Ensure consistent padding */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+.posters::-webkit-scrollbar {
+    display: none;
+}
+
+.poster {
+    max-height: 250px;
+    margin-right: 10px;
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.isSmall-poster {
+    max-height: 10rem;
+    margin-right: 10px;
+    /* Ensure margin-right for consistency */
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+}
+
+.isSmall-poster:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
